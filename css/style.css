@@ -1,0 +1,165 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color: #eff7fa;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn{
+    background-color: var(--red-color);
+    color:var(--yellow-color) ;
+    padding: 0.5rem 1rem;
+}
+/*  s t a r t   n a v b a r    s e c t i o n   */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color:var(--green-color) ;
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search i{
+   color: var(--green-color); 
+}
+.navbar .navbar-toggler{
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-collapse .btn:hover {
+    color: white;
+}
+span.navbar-toggler-icon {
+    color: #ff3150;
+}
+/*  e n d  n a v b a r    s e c t i o n   */
+
+/*  s t a r t   l a n d i n g   s e c t i o n   */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/*  e n d  l a n d i n g   s e c t i o n   */
+
+/* s t a r t   s e r v i c e s   s e c t i o n  */
+.section_title p::after{
+    content:"";
+    width: 7.5rem;
+    height: 2px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feat .icon-holder .icon{
+    color: var(--green-color);
+}
+.feat h4{
+    color: var(--yellow-color);
+}
+/* e n d  s e r v i c e s   s e c t i o n  */
+
+/*  s t a r t   p o r t f o l i o   s e c t i o n */
+.portfolio{
+    background-color: var(--section-color) !important;
+}
+.portfolio .tab_layer{
+    transition: all 0.5s;
+}
+.portfolio .tab_layer:hover{
+   opacity: 1 !important;
+}
+.nav li button{
+   color:black !important;
+   margin-left: 1rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+   background-color: var(--red-color) !important;
+   color:var(--yellow-color) !important;
+}
+/*  e n d   p o r t f o l i o   s e c t i o n */
+
+/*  s t a r t   a b o u t   s e c t i o n  */
+.about button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.about button:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+/*  e n d   a b o u t   s e c t i o n  */
+
+/*  s t a r t   t e a m  s e c t i o n  */
+.team{
+    background-color: var(--section-color);
+}
+.team .box:hover {
+    transform: translateY(-10px);
+}
+.team .team_title h2{
+    color: var(--yellow-color);
+}
+.team h4{
+    background-color: var(--green-color);
+    margin-bottom: 0 !important;
+}
+.team p{
+    top: 0;
+}
+/*  e n d   t e a m  s e c t i o n   */
+
+/*  s t a r t   P r o j e c t   s e c t i o n  */
+.project{
+    background-color: var(--dark-color);
+}
+.project button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+/*  e n d  P r o j e c t   s e c t i o n  */
+
+/*   s t a r t   b l o g   s e c t i o n   */
+.blog button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.blog .card .card_img{
+    overflow: hidden;
+}
+.blog .card:hover img{
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+/*   e n d   b l o g   s e c t i o n   */
+
+.subscribe{
+    background-color: var(--dark-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid var(--yellow-color);
+}
+.subscribe input[type="submit"] {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.subscribe h5{
+    color: var(--yellow-color);
+}
+.subscribe ::placeholder {
+    color: var(--yellow-color);
+}
